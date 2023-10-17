@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewLabel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Altotextview"
+        android:layout_marginStart="@dimen/Margen"
+        android:layout_marginTop="@dimen/Margencuadruple"
+        android:layout_marginEnd="@dimen/Margen"
+        android:layout_marginBottom="@dimen/Margencuadruple"
+        android:background="@drawable/rounded_border"
+        android:fontFamily="sans-serif-light"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/colorTextViewText"
+        android:textSize="34sp"
+        android:padding="10dp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btnParentesisCierre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnParentesisCierre"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:background="@drawable/border_cl_button"
+        android:text=")"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/btnBorrarTodo"
+        app:layout_constraintStart_toEndOf="@+id/btnParentesisAbre"
+        app:layout_constraintTop_toTopOf="@+id/btnParentesisAbre" />
+
+    <Button
+        android:id="@+id/btnParentesisAbre"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:layout_marginStart="@dimen/Margen"
+        android:layout_marginBottom="@dimen/Margendoble"
+        android:background="@drawable/border_cl_button"
+        android:text="("
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btnNumberSeven"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNumberOne"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:layout_marginStart="@dimen/Margen"
+        android:layout_marginBottom="@dimen/Margendoble"
+        android:background="@drawable/border_cl_button"
+        android:text="1"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btnNumberZero"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNumberTwo"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:background="@drawable/border_cl_button"
+        android:text="2"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/btnNumberThree"
+        app:layout_constraintStart_toEndOf="@+id/btnNumberOne"
+        app:layout_constraintTop_toTopOf="@+id/btnNumberOne" />
+
+    <Button
+        android:id="@+id/btnNumberThree"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:background="@drawable/border_cl_button"
+        android:text="3"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/btnRestar"
+        app:layout_constraintStart_toEndOf="@+id/btnNumberTwo"
+        app:layout_constraintTop_toTopOf="@+id/btnRestar" />
+
+    <Button
+        android:id="@+id/btnNumberFour"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:layout_marginStart="@dimen/Margen"
+        android:layout_marginBottom="@dimen/Margendoble"
+
+        android:background="@drawable/border_cl_button"
+        android:text="4"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btnNumberOne"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:layout_marginEnd="@dimen/Margen"
+        android:layout_marginBottom="@dimen/Margencuadruple"
+        android:background="@drawable/border_cl_button"
+        android:text="+"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnNumberSeven"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:layout_marginStart="@dimen/Margen"
+        android:layout_marginBottom="@dimen/Margendoble"
+        android:background="@drawable/border_cl_button"
+        android:text="7"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btnNumberFour"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNumberEight"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:background="@drawable/border_cl_button"
+        android:text="8"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/btnNumberNine"
+        app:layout_constraintStart_toEndOf="@+id/btnNumberSeven"
+        app:layout_constraintTop_toTopOf="@+id/btnNumberSeven" />
+
+    <Button
+        android:id="@+id/btnIgual"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:background="@drawable/border_cl_button_var_one"
+        android:text="="
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/btnSumar"
+        app:layout_constraintStart_toEndOf="@+id/btnNumberZero"
+        app:layout_constraintTop_toTopOf="@+id/btnSumar" />
+
+    <Button
+        android:id="@+id/btnNumberNine"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:background="@drawable/border_cl_button"
+        android:text="9"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/btnDividir"
+        app:layout_constraintStart_toEndOf="@+id/btnNumberEight"
+        app:layout_constraintTop_toTopOf="@+id/btnDividir" />
+
+
+    <Button
+        android:id="@+id/btnNumberFive"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:background="@drawable/border_cl_button"
+        android:text="5"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/btnNumberSix"
+        app:layout_constraintStart_toEndOf="@+id/btnNumberFour"
+        app:layout_constraintTop_toTopOf="@+id/btnNumberFour" />
+
+    <Button
+        android:id="@+id/btnNumberZero"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:layout_marginStart="119dp"
+        android:background="@drawable/border_cl_button"
+        android:text="0"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnIgual" />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:layout_marginEnd="@dimen/Margen"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/border_cl_button"
+        android:text="-"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btnSumar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnNumberSix"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:background="@drawable/border_cl_button"
+        android:text="6"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultiplicar"
+        app:layout_constraintStart_toEndOf="@+id/btnNumberFive"
+        app:layout_constraintTop_toTopOf="@+id/btnMultiplicar" />
+
+    <Button
+        android:id="@+id/btnDividir"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:layout_marginEnd="@dimen/Margen"
+        android:layout_marginBottom="@dimen/Margendoble"
+        android:background="@drawable/border_cl_button"
+        android:text="/"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btnMultiplicar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnMultiplicar"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:layout_marginEnd="@dimen/Margen"
+        android:layout_marginBottom="@dimen/Margendoble"
+        android:background="@drawable/border_cl_button"
+        android:text="x"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btnRestar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnBorrarTodo"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:background="@drawable/border_cl_button_var_one"
+        android:text="AC"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/btnBorrar"
+        app:layout_constraintStart_toEndOf="@+id/btnParentesisCierre"
+        app:layout_constraintTop_toTopOf="@+id/btnBorrar" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:layout_marginEnd="@dimen/Margen"
+        android:layout_marginBottom="@dimen/Margendoble"
+        android:background="@drawable/border_cl_button_var_one"
+        android:text="⌫"
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btnDividir"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnPunto"
+        android:layout_width="@dimen/Anchobt"
+        android:layout_height="@dimen/Altobt"
+        android:layout_marginStart="@dimen/Margen"
+        android:layout_marginBottom="@dimen/Margencuadruple"
+        android:background="@drawable/border_cl_button_var_one"
+        android:text="."
+        android:textColor="@color/colorText"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnNumberZero" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

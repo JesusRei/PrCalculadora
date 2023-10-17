@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Anchobt" >70dp</dimen>
+    <dimen name="Altobt">50dp</dimen>
+
+    <dimen name="Altotextview" >140dp</dimen>
+
+    <dimen name="Margen" >16dp</dimen>
+    <dimen name="Margendoble" >32dp</dimen>
+    <dimen name="Margentriple" >48dp</dimen>
+    <dimen name="Margencuadruple" >64dp</dimen>
+</resources>
